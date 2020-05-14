@@ -1,4 +1,4 @@
-const popupFormula = () => {
+const formula = () => {
   const formula = document.querySelector('#formula');
   const formulaItem = formula.querySelectorAll('.formula-item');
   const size = window.innerWidth;
@@ -113,4 +113,4 @@ const popupFormula = () => {
   
 };
 
-export default popupFormula;
+export default formula;

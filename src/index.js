@@ -24,5 +24,5 @@ smoothScrolling();
 popupRepairTypes();
 telMask();
 linkPrivacy();
-popupFormula();
+formula();
 
