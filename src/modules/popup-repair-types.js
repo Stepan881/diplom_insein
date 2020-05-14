@@ -18,7 +18,6 @@ const popupRepairTypes = () => {
     if (evt.target.classList.contains('popup-repair-types')) {
       popupRepairTypes.style = "visibility: hidden;";
     }
-    
   });
 
   closeBtns.forEach(element => {

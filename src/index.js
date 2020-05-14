@@ -13,9 +13,13 @@ import telMenu from './modules/tel-menu';
 import burgerMenu from './modules/burger-menu';
 import smoothScrolling from './modules/smooth-scrolling';
 import popupRepairTypes from './modules/popup-repair-types';
+import telMask from './modules/tel-mask';
+import linkPrivacy from './modules/link-privacy';
 
 
 telMenu();
 burgerMenu();
 smoothScrolling();
 popupRepairTypes();
+telMask();
+linkPrivacy();
