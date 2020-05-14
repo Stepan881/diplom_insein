@@ -11,8 +11,10 @@ import 'fetch-polyfill';
 
 import telMenu from './modules/tel-menu';
 import burgerMenu from './modules/burger-menu';
+import smoothScrolling from './modules/smooth-scrolling';
 
 
 
 telMenu();
 burgerMenu();
+smoothScrolling();
