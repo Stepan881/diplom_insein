@@ -9,6 +9,8 @@ import 'element-closest';
 import 'es6-promise';
 import 'fetch-polyfill';
 
+import telMenu from './modules/tel-menu';
 
 
 
+telMenu();
