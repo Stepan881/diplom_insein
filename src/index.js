@@ -10,7 +10,9 @@ import 'es6-promise';
 import 'fetch-polyfill';
 
 import telMenu from './modules/tel-menu';
+import burgerMenu from './modules/burger-menu';
 
 
 
 telMenu();
+burgerMenu();
