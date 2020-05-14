@@ -4,7 +4,6 @@ const burgerMenu = () => {
   const popupDialogMenu = popupMenu.querySelector('.popup-dialog-menu');
   const closeMenu = popupMenu.querySelector('.close-menu');
 
-
   menuBtn.addEventListener('click', () => {
     popupDialogMenu.style = 'transform: translate3d(0px, 0px, 0px);';
   });
