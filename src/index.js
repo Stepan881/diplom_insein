@@ -16,6 +16,8 @@ import popupRepairTypes from './modules/popup-repair-types';
 import telMask from './modules/tel-mask';
 import linkPrivacy from './modules/link-privacy';
 import formula from './modules/formula';
+import problems from './modules/problems';
+import repairViews from './modules/repair-views';
 
 
 telMenu();
@@ -25,4 +27,5 @@ popupRepairTypes();
 telMask();
 linkPrivacy();
 formula();
-
+problems();
+repairViews();
