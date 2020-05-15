@@ -18,6 +18,7 @@ import linkPrivacy from './modules/link-privacy';
 import formula from './modules/formula';
 import problems from './modules/problems';
 import repairViews from './modules/repair-views';
+import accordion from './modules/accordion';
 
 let windowWidth = window.innerWidth;
 window.addEventListener(`resize`, () => {
@@ -36,4 +37,5 @@ document.addEventListener('DOMContentLoaded', () => {
   problems();
   const sliderRepair = new repairViews();
   sliderRepair.start();
+  accordion();
 });
