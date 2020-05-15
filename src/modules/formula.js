@@ -1,7 +1,10 @@
-const formula = () => {
+const formula = (size) => {
   const formula = document.querySelector('#formula');
   const formulaItem = formula.querySelectorAll('.formula-item');
-  const size = window.innerWidth;
+  
+
+
+  
   if (size > 1024) {
     const activeFormula = document.createElement('style');
     activeFormula.textContent = `
@@ -44,7 +47,6 @@ const formula = () => {
     const arrowRight = formula.querySelector('#formula-arrow_right');
     const arrowLeft = formula.querySelector('#formula-arrow_left');
     const formulaSliderWrap = formula.querySelector('.formula-slider-wrap');    
-    console.log('formulaSliderWrap: ', formulaSliderWrap);
     formulaSliderWrap.style.overflow = "hidden";
 
 

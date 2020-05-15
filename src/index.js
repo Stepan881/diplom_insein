@@ -19,13 +19,21 @@ import formula from './modules/formula';
 import problems from './modules/problems';
 import repairViews from './modules/repair-views';
 
+let windowWidth = window.innerWidth;
+window.addEventListener(`resize`, () => {
+  windowWidth = window.innerWidth;
+  formula(windowWidth);
+});
 
-telMenu();
-burgerMenu();
-smoothScrolling();
-popupRepairTypes();
-telMask();
-linkPrivacy();
-formula();
-problems();
-repairViews();
+document.addEventListener('DOMContentLoaded', () => {
+  telMenu();
+  burgerMenu();
+  smoothScrolling();
+  popupRepairTypes();
+  telMask();
+  linkPrivacy();
+  formula(windowWidth);
+  problems();
+  const sliderRepair = new repairViews();
+  sliderRepair.start();
+});
