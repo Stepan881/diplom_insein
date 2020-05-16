@@ -5,8 +5,6 @@ const telMask = () => {
     el.setAttribute('placeholder', '+7 (___) ___-__-__');
     el.addEventListener('input', (evt) => {
 
-      console.log(el);
-      
 			const keyCode = evt.keyCode;
 			const template = '+7 (___) ___-__-__';
 			const	def = template.replace(/\D/g, "");

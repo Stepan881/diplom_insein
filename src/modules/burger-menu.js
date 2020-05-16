@@ -16,7 +16,9 @@ const burgerMenu = () => {
   });
 
   document.addEventListener('keydown', (evt) => {
-    closeMenu();
+    if (evt.keyCode === 27) {
+      closeMenu();
+    }
   });
 };
 

@@ -19,11 +19,14 @@ import formula from './modules/formula';
 import problems from './modules/problems';
 import repairViews from './modules/repair-views';
 import accordion from './modules/accordion';
+import documentSlider from './modules/document-slider';
+import slider from './modules/slider-contract';
 
 let windowWidth = window.innerWidth;
 window.addEventListener(`resize`, () => {
   windowWidth = window.innerWidth;
   formula(windowWidth);
+  documentSlider(windowWidth);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -38,4 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const sliderRepair = new repairViews();
   sliderRepair.start();
   accordion();
+  documentSlider(windowWidth);
+
+  const sliderTransparency = new slider();
+  sliderTransparency.start();
 });

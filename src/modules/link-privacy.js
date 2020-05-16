@@ -23,7 +23,9 @@ const linkPrivacy = () => {
 
 
   document.addEventListener('keydown', (evt) => {
-    popupPrivacy.style = "visibility: hidden;";
+    if (evt.keyCode === 27) {
+      popupPrivacy.style = "visibility: hidden;";
+    }
   });
 
 };

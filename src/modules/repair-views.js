@@ -23,7 +23,7 @@ class repairViews {
     this.eventListener();
     this.eventListenerSlides();
     this.eventListenerBase();
-    this.sliderCounterContentTotal.textContent = this.sliderCount + 1;
+    this.sliderCounterContentTotal.textContent = this.repairSlide[0].children.length;
     this.sliderCounterContentCurrent.textContent = this.slide + 1;
   
   }
@@ -83,8 +83,8 @@ class repairViews {
         this.render();
         el.classList.add('active');
         this.repairSlide[i].style.display = 'block';
-        this.sliderCount = i;
-        this.sliderCounterContentTotal.textContent = this.sliderCount + 1;
+        this.sliderCount = i;       
+        this.sliderCounterContentTotal.textContent = this.repairSlide[i].children.length;
       });
     });
   }

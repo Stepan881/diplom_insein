@@ -1,4 +1,4 @@
-const accordion = (size) => {
+const accordion = () => {
   const faq = document.querySelector('#faq');
   const titleBlock = faq.querySelectorAll('.title_block');
   faq.addEventListener(`click`, (evt) => {
