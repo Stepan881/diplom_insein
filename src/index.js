@@ -21,6 +21,10 @@ import repairViews from './modules/repair-views';
 import accordion from './modules/accordion';
 import documentSlider from './modules/document-slider';
 import slider from './modules/slider-contract';
+import buttonWide from './modules/button_wide';
+import Carousel from './modules/carousel';
+import sliderReviews from './modules/slider-reviews';
+import inspirationalPortfolio from './modules/inspirational-portfolio';
 
 let windowWidth = window.innerWidth;
 window.addEventListener(`resize`, () => {
@@ -45,4 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const sliderTransparency = new slider();
   sliderTransparency.start();
+  buttonWide();
+
+  const partners = new Carousel();
+  partners.start();
+
+  sliderReviews();
+  inspirationalPortfolio();
 });
