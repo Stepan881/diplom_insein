@@ -25,6 +25,8 @@ import buttonWide from './modules/button_wide';
 import Carousel from './modules/carousel';
 import sliderReviews from './modules/slider-reviews';
 import inspirationalPortfolio from './modules/inspirational-portfolio';
+import inspirationalPortfolioPopup from './modules/inspirational-portfolio-popup';
+
 
 let windowWidth = window.innerWidth;
 window.addEventListener(`resize`, () => {
@@ -56,4 +58,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sliderReviews();
   inspirationalPortfolio();
+  inspirationalPortfolioPopup();
 });
