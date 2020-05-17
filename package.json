@@ -21,10 +21,12 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
+    "document-register-element": "^1.14.3",
     "element-closest": "^3.0.2",
     "es6-promise": "^4.2.8",
     "fetch-polyfill": "^0.8.2",
     "formdata-polyfill": "^3.0.19",
+    "mdn-polyfills": "^5.20.0",
     "nodelist-foreach-polyfill": "^1.2.0"
   }
 }

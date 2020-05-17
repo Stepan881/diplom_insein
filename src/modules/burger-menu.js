@@ -3,7 +3,7 @@ import closeMenu from './close-menu.js';
 const burgerMenu = () => {
   const menuBtn = document.querySelector('.menu__icon');
   const popupMenu = document.querySelector('.popup-menu');
-  const popupDialogMenu = popupMenu.querySelector('.popup-dialog-menu');
+  let popupDialogMenu = popupMenu.querySelector('.popup-dialog-menu');
   const closeMenuBtn = popupMenu.querySelector('.close-menu');
 
   menuBtn.addEventListener('click', () => {

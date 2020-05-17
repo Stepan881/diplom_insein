@@ -1,10 +1,7 @@
 const formula = (size) => {
   const formula = document.querySelector('#formula');
   const formulaItem = formula.querySelectorAll('.formula-item');
-  
 
-
-  
   if (size > 1024) {
     const activeFormula = document.createElement('style');
     activeFormula.textContent = `

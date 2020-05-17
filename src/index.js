@@ -1,6 +1,3 @@
-'use strict';
-
-
 import "regenerator-runtime/runtime";
 import "@babel/polyfill";
 import 'nodelist-foreach-polyfill';
@@ -8,6 +5,13 @@ import 'formdata-polyfill';
 import 'element-closest';
 import 'es6-promise';
 import 'fetch-polyfill';
+import 'mdn-polyfills/Node.prototype.append';
+import 'mdn-polyfills/Element.prototype.matches';
+import 'mdn-polyfills/Element.prototype.getAttributeNames';
+import 'mdn-polyfills/Node.prototype.addEventListener';
+import 'core-js/es7/object';
+import 'core-js/es7/array';
+import 'document-register-element';
 
 import telMenu from './modules/tel-menu';
 import burgerMenu from './modules/burger-menu';
@@ -32,6 +36,7 @@ let windowWidth = window.innerWidth;
 window.addEventListener(`resize`, () => {
   windowWidth = window.innerWidth;
   formula(windowWidth);
+  problems(windowWidth);
   documentSlider(windowWidth);
 });
 
@@ -43,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   telMask();
   linkPrivacy();
   formula(windowWidth);
-  problems();
+  problems(windowWidth);
   const sliderRepair = new repairViews();
   sliderRepair.start();
   accordion();
