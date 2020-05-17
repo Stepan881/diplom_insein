@@ -30,6 +30,8 @@ import Carousel from './modules/carousel';
 import sliderReviews from './modules/slider-reviews';
 import inspirationalPortfolio from './modules/inspirational-portfolio';
 import inspirationalPortfolioPopup from './modules/inspirational-portfolio-popup';
+import tabs from './modules/tabs';
+import scheme from './modules/scheme-slide';
 
 
 let windowWidth = window.innerWidth;
@@ -64,4 +66,21 @@ document.addEventListener('DOMContentLoaded', () => {
   sliderReviews();
   inspirationalPortfolio();
   inspirationalPortfolioPopup();
+
+  tabs({
+    block: '#designs',
+    blockWrapper: '.nav',
+    blockSlides: '#designs-list',
+    arrowRight: '#nav-arrow-designs_right',
+    arrowLeft: '#nav-arrow-designs_left'
+  });
+
+  tabs({
+    block: '#scheme',
+    blockWrapper: '.nav',
+    blockSlides: '#scheme-list',
+    arrowRight: '#nav-arrow-scheme_right',
+    arrowLeft: '#nav-arrow-scheme_left'
+  });
+  scheme();
 });
