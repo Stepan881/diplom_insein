@@ -1,7 +1,6 @@
 const  smoothScrolling = () => {
   const popup = document.querySelector('.popup-menu');
   const link = popup.querySelectorAll('a');
-  console.log('link: ', link);
   link.forEach(element => {
     if (element.getAttribute('href')) {
       let symbol = element.getAttribute('href').substr(0, 1);
