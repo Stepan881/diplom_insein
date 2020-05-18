@@ -3,8 +3,6 @@ const buttonWide = () => {
   const popupConsultation = document.querySelector('.popup-consultation');
   const closePopup = popupConsultation.querySelector('.close-consultation');
 
-
-
   buttonWide.forEach(el => {
     el.addEventListener(`click`, () => {
       popupConsultation.style = "visibility: visible;";
@@ -15,11 +13,6 @@ const buttonWide = () => {
     popupConsultation.style = "visibility: hidden;";
   });
 
-  document.addEventListener('keydown', (evt) => {
-    if (evt.keyCode === 27) {
-      popupConsultation.style = "visibility: hidden;";
-    }
-  });
 };
 
 export default buttonWide;

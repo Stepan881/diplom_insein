@@ -80,13 +80,6 @@ const inspirationalPortfolioPopup = () => {
     popupPortfolio.style = "visibility: hidden;";
   });
 
-
-  document.addEventListener('keydown', (evt) => {
-    if (evt.keyCode === 27) {
-      popupPortfolio.style = "visibility: hidden;";
-    }
-  });
-
   let windowWidth = window.innerWidth;
 
   window.addEventListener(`resize`, () => {

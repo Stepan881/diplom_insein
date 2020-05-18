@@ -14,8 +14,6 @@ let activeSlide = 0;
       activeSlide = i;
       render();
       element.classList.add('active');
-      console.log(i);
-      
     });
     
   });

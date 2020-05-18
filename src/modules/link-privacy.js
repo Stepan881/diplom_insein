@@ -10,7 +10,6 @@ const linkPrivacy = () => {
     });
   });
 
-
   popupPrivacy.addEventListener(`click`, (evt) => {
     if (evt.target.classList.contains('popup-privacy')) {
       popupPrivacy.style = "visibility: hidden;";
@@ -20,14 +19,6 @@ const linkPrivacy = () => {
   closeBtn.addEventListener(`click`, () => {
     popupPrivacy.style = "visibility: hidden;";
   });
-
-
-  document.addEventListener('keydown', (evt) => {
-    if (evt.keyCode === 27) {
-      popupPrivacy.style = "visibility: hidden;";
-    }
-  });
-
 };
 
 export default linkPrivacy;

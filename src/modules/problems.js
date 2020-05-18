@@ -76,7 +76,6 @@ const problems = (size) => {
     problemsSlider.style.cssText = `
       display: flex;
       align-items: flex-start;
-      /*overflow: hidden;*/
       will-change: transform;
     `;
     problemsItemmobile.forEach(element => {
@@ -96,7 +95,6 @@ const problems = (size) => {
         }
       });
     };
-
 
     let count = 0;
     let slide = 0;
@@ -125,15 +123,7 @@ const problems = (size) => {
       problemsSlider.style.transform = `translateX(${slide * pos}%)`;
       render(count);
     });     
-
-
-
-
-
-
-
   }
-  
 };
 
 export default problems;

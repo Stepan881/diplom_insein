@@ -37,15 +37,6 @@ class sliderContract {
       this.slideAfterActive = 1;
     });
 
-    document.addEventListener('keydown', (evt) => {
-      if (evt.keyCode === 27) {
-        this.popupTransparency.style.visibility = 'hidden';
-        this.slideActive = 0;
-        this.slideAfterAll = 0;
-        this.slideAfterActive = 1;
-      }
-    });
-
     this.arrowRight.addEventListener('click', () => {
       ++this.slideAfterActive;
       if (this.slideAfterActive > this.slideAfterAll) {

@@ -15,11 +15,7 @@ const burgerMenu = () => {
     closeMenu();
   });
 
-  document.addEventListener('keydown', (evt) => {
-    if (evt.keyCode === 27) {
-      closeMenu();
-    }
-  });
+
 };
 
 export default burgerMenu;

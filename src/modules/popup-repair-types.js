@@ -25,14 +25,6 @@ const popupRepairTypes = () => {
       popupRepairTypes.style = "visibility: hidden;";
     });
   });
-
-  document.addEventListener('keydown', (evt) => {
-    if (evt.keyCode === 27) {
-      popupRepairTypes.style = "visibility: hidden;";
-    }
-  });
-
-
 };
 
 export default popupRepairTypes;
