@@ -1,4 +1,3 @@
-import closeMenu from './close-menu.js';
 
 const popupRepairTypes = () => {
   const linkLists = document.querySelectorAll('.link-list');
@@ -8,11 +7,13 @@ const popupRepairTypes = () => {
   linkLists.forEach(el => {
     if (!el.matches('a')) {
       el.addEventListener(`click`, () => {
-        closeMenu();
+        const popupDialogMenu = document.querySelector('.popup-menu .popup-dialog-menu');
+        popupDialogMenu.style = 'transform: translateX(645px);';
         popupRepairTypes.style = "visibility: visible;";
       });
     }
   });
+
 
   popupRepairTypes.addEventListener(`click`, (evt) => {
     if (evt.target.classList.contains('popup-repair-types')) {

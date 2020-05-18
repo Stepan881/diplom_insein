@@ -1,17 +1,13 @@
-import "regenerator-runtime/runtime";
 import "@babel/polyfill";
 import 'nodelist-foreach-polyfill';
 import 'formdata-polyfill';
-import 'element-closest';
 import 'es6-promise';
 import 'fetch-polyfill';
+import 'regenerator-runtime/runtime';
+import 'element-closest';
 import 'mdn-polyfills/Node.prototype.append';
 import 'mdn-polyfills/Element.prototype.matches';
-import 'mdn-polyfills/Element.prototype.getAttributeNames';
-import 'mdn-polyfills/Node.prototype.addEventListener';
-import 'core-js/es7/object';
-import 'core-js/es7/array';
-import 'document-register-element';
+import 'mdn-polyfills/Node.prototype.remove';
 
 import telMenu from './modules/tel-menu';
 import burgerMenu from './modules/burger-menu';

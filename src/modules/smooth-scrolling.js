@@ -1,5 +1,3 @@
-import closeMenu from './close-menu.js';
-
 const  smoothScrolling = () => {
   const link = document.querySelectorAll('a');
   link.forEach(element => {
@@ -14,7 +12,9 @@ const  smoothScrolling = () => {
             behavior: 'smooth',
             block: 'start'
           });
-          closeMenu();
+          const popupDialogMenu = document.querySelector('.popup-menu .popup-dialog-menu');
+          popupDialogMenu.style = 'transform: translateX(645px);';
+            
         });
       }
     }
