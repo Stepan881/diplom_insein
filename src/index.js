@@ -34,6 +34,7 @@ import tabs from './modules/tabs';
 import scheme from './modules/scheme-slide';
 import {desingBoolet, desingSliders, desingPopup} from './modules/desing-pagination-boolet';
 import keyDownEsc from './modules/eventListenerKeyDown';
+import ajaxPost from './modules/ajax-post';
 
 let windowWidth = window.innerWidth;
 window.addEventListener(`resize`, () => {
@@ -153,4 +154,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   keyDownEsc();
   desingPopup();
+  ajaxPost();
 });
