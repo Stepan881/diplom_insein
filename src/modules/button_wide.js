@@ -5,12 +5,12 @@ const buttonWide = () => {
 
   buttonWide.forEach(el => {
     el.addEventListener(`click`, () => {
-      popupConsultation.style = "visibility: visible;";
+      popupConsultation.style.cssText = "visibility: visible;";
     });
   });
 
   closePopup.addEventListener(`click`, (evt) => {
-    popupConsultation.style = "visibility: hidden;";
+    popupConsultation.style.cssText = "visibility: hidden;";
   });
 
 };

@@ -28,14 +28,14 @@ const problems = (size) => {
         if (!evt.target.matches('.problems-item__icon')) {
           element.style.zIndex = "1";
           if (problemsItemPopup.getBoundingClientRect().top > 0 && problemsItemPopup.getBoundingClientRect().bottom < window.innerHeight) {
-            problemsItemPopup.style = "opacity: 1; visibility: visible; transition: opacity 0.3s; bottom: 86px;";
+            problemsItemPopup.style.cssText = "opacity: 1; visibility: visible; transition: opacity 0.3s; bottom: 86px;";
           } else if (problemsItemPopup.getBoundingClientRect().bottom > window.innerHeight) {
-            problemsItemPopup.style = "opacity: 1; visibility: visible; transition: opacity 0.3s; top: -380px;";
+            problemsItemPopup.style.cssText = "opacity: 1; visibility: visible; transition: opacity 0.3s; top: -380px;";
 
             problemsItemPopup.classList.add('active-problems-top');
 
           } else {
-            problemsItemPopup.style = "opacity: 1; visibility: visible; transition: opacity 0.3s; top: 100px; padding: 40px 40px 0;";
+            problemsItemPopup.style.cssText = "opacity: 1; visibility: visible; transition: opacity 0.3s; top: 100px; padding: 40px 40px 0;";
             problemsItemPopup.classList.add('active-problems');
           }
         }     
@@ -48,7 +48,7 @@ const problems = (size) => {
           problemsItemPopup.classList.remove('active-problems');
           problemsItemIcon.style.background = '';   
           element.style.zIndex = "0";
-          problemsItemPopup.style = "opacity: 0.1; visibility: hidden; transition: opacity 0.3s;";  
+          problemsItemPopup.style.cssText = "opacity: 0.1; visibility: hidden; transition: opacity 0.3s;";  
           
         }   
       });

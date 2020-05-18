@@ -5,19 +5,19 @@ const linkPrivacy = () => {
 
   linkPrivacys.forEach(el => {
     el.addEventListener(`click`, () => {
-      popupPrivacy.style = "visibility: visible;";
+      popupPrivacy.style.cssText = "visibility: visible;";
       
     });
   });
 
   popupPrivacy.addEventListener(`click`, (evt) => {
     if (evt.target.classList.contains('popup-privacy')) {
-      popupPrivacy.style = "visibility: hidden;";
+      popupPrivacy.style.cssText = "visibility: hidden;";
     }
   });
 
   closeBtn.addEventListener(`click`, () => {
-    popupPrivacy.style = "visibility: hidden;";
+    popupPrivacy.style.cssText = "visibility: hidden;";
   });
 };
 

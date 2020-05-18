@@ -8,6 +8,7 @@ import 'element-closest';
 import 'mdn-polyfills/Node.prototype.append';
 import 'mdn-polyfills/Element.prototype.matches';
 import 'mdn-polyfills/Node.prototype.remove';
+import "scroll-behavior-polyfill";
 
 import telMenu from './modules/tel-menu';
 import burgerMenu from './modules/burger-menu';

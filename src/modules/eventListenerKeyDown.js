@@ -6,7 +6,7 @@ const keyDownEsc = () => {
   document.addEventListener('keydown', (evt) => {      
     if (evt.keyCode === 27) {
       popup.forEach(element => {
-        element.style = "visibility: hidden;";
+        element.style.cssText = "visibility: hidden;";
       });
       
     }

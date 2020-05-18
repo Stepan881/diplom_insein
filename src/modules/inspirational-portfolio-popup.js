@@ -73,11 +73,11 @@ const inspirationalPortfolioPopup = () => {
   });
 
   popupPortfolioCloseMobile.addEventListener(`click`, () => {
-    popupPortfolio.style = "visibility: hidden;";
+    popupPortfolio.style.cssText = "visibility: hidden;";
   });
 
   popupPortfolioClose.addEventListener(`click`, () => {
-    popupPortfolio.style = "visibility: hidden;";
+    popupPortfolio.style.cssText = "visibility: hidden;";
   });
 
   let windowWidth = window.innerWidth;

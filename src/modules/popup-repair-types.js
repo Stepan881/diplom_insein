@@ -8,8 +8,8 @@ const popupRepairTypes = () => {
     if (!el.matches('a')) {
       el.addEventListener(`click`, () => {
         const popupDialogMenu = document.querySelector('.popup-menu .popup-dialog-menu');
-        popupDialogMenu.style = 'transform: translateX(645px);';
-        popupRepairTypes.style = "visibility: visible;";
+        popupDialogMenu.style.cssText = 'transform: translateX(645px);';
+        popupRepairTypes.style.cssText = "visibility: visible;";
       });
     }
   });
@@ -17,13 +17,13 @@ const popupRepairTypes = () => {
 
   popupRepairTypes.addEventListener(`click`, (evt) => {
     if (evt.target.classList.contains('popup-repair-types')) {
-      popupRepairTypes.style = "visibility: hidden;";
+      popupRepairTypes.style.cssText = "visibility: hidden;";
     }
   });
 
   closeBtns.forEach(element => {
     element.addEventListener(`click`, () => {
-      popupRepairTypes.style = "visibility: hidden;";
+      popupRepairTypes.style.cssText = "visibility: hidden;";
     });
   });
 };

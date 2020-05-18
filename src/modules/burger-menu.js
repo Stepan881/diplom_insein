@@ -1,16 +1,18 @@
 const burgerMenu = () => {
-  const menuBtn = document.querySelectorAll('.menu__icon');
+  const menuBtn = document.querySelector('.menu .menu__icon');
 
   const popupMenu = document.querySelector('.popup-menu');
-  const popupDialogMenu = popupMenu.querySelector('.popup-dialog-menu');
+  let popupDialogMenu = popupMenu.querySelector('.popup-dialog-menu');
   const closeMenuBtn = popupMenu.querySelector('.close-menu');
 
-  menuBtn[0].addEventListener('click', () => {
-    popupDialogMenu.style = 'transform: translateY(0);';
+  menuBtn.addEventListener('click', () => {
+    
+    popupDialogMenu.style.cssText = 'transform: translateY(0);';
+
   });
 
   closeMenuBtn.addEventListener('click', () => {
-    popupDialogMenu.style = 'transform: translateX(645px);';
+    popupDialogMenu.style.cssText = 'transform: translateX(645px);';
   });
 
 

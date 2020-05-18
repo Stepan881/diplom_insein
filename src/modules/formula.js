@@ -20,10 +20,10 @@ const formula = (size) => {
         formulaItemIcon.classList.add('active-item');
         if (!evt.target.matches('.formula-item__icon')) {
           if (formulaItemPopup.getBoundingClientRect().top > 0) {
-            formulaItemPopup.style = "opacity: 1; visibility: visible; transition: opacity 0.3s;";
+            formulaItemPopup.style.cssText = "opacity: 1; visibility: visible; transition: opacity 0.3s;";
           } else {
             element.style.zIndex = "1";
-            formulaItemPopup.style = "opacity: 1; visibility: visible; transition: opacity 0.3s; top: 100px; padding: 40px 40px 0;";
+            formulaItemPopup.style.cssText = "opacity: 1; visibility: visible; transition: opacity 0.3s; top: 100px; padding: 40px 40px 0;";
             formulaItemPopup.classList.add('active-formula');
           }
         }     
@@ -33,7 +33,7 @@ const formula = (size) => {
         if (!evt.target.matches('.formula-item__icon')) {
           formulaItemIcon.classList.remove('active-item');
           element.style.zIndex = "0";
-          formulaItemPopup.style = "opacity: 0.1; visibility: hidden; transition: opacity 0.3s;";  
+          formulaItemPopup.style.cssText = "opacity: 0.1; visibility: hidden; transition: opacity 0.3s;";  
           formulaItemPopup.classList.remove('active-formula');
         }   
       });
