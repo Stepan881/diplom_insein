@@ -18,6 +18,10 @@ const ajaxPost = () =>  {
 
     <div class="preloader">${status}</div>`;
 
+      if (document.querySelector('.preloader')) {
+        return;
+      }
+
     form.insertAdjacentHTML(`afterbegin`, stratus);
     loaderHtml = document.querySelector('.preloader');
 
@@ -30,12 +34,13 @@ const ajaxPost = () =>  {
   forms.forEach(form => {
 
     const postData = (body) => {
-      return fetch('./server.php', {
+      return fetch('./db/server.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(body)
+        body: JSON.stringify(body),
+        mode: 'cors'
       }); 
     };
 

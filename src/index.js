@@ -35,6 +35,7 @@ import scheme from './modules/scheme-slide';
 import {desingBoolet, desingSliders, desingPopup} from './modules/desing-pagination-boolet';
 import keyDownEsc from './modules/eventListenerKeyDown';
 import ajaxPost from './modules/ajax-post';
+import get from './modules/get';
 
 let windowWidth = window.innerWidth;
 window.addEventListener(`resize`, () => {
@@ -155,4 +156,5 @@ document.addEventListener('DOMContentLoaded', () => {
   keyDownEsc();
   desingPopup();
   ajaxPost();
+  get();
 });
