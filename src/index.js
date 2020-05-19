@@ -9,6 +9,7 @@ import 'mdn-polyfills/Node.prototype.append';
 import 'mdn-polyfills/Element.prototype.matches';
 import 'mdn-polyfills/Node.prototype.remove';
 import "scroll-behavior-polyfill";
+import "mdn-polyfills/Node.prototype.prepend";
 
 import telMenu from './modules/tel-menu';
 import burgerMenu from './modules/burger-menu';
@@ -37,6 +38,7 @@ import get from './modules/get';
 let windowWidth = window.innerWidth;
 window.addEventListener(`resize`, () => {
   windowWidth = window.innerWidth;
+  burgerMenu(windowWidth);
   formula(windowWidth);
   problems(windowWidth);
   documentSlider(windowWidth);
@@ -72,7 +74,7 @@ window.addEventListener(`resize`, () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   telMenu();
-  burgerMenu();
+  burgerMenu(windowWidth);
   smoothScrolling();
   popupRepairTypes();
   telMask();

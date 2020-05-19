@@ -40,7 +40,6 @@ const get = () => {
 
   };
   const errorData = () => {
-    console.log('ERROR');
     const status = popup.querySelector('.popup-repair-types-content__head-title');
     status.textContent = "Ошибка загрузки, повторите попытку позже!";
     status.style.color = 'red';

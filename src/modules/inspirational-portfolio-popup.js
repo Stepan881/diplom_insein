@@ -23,17 +23,12 @@ const inspirationalPortfolioPopup = () => {
   const render = () => {
     slider();
     textWrapper.querySelector('.slider-counter-content__current').textContent = slideActive + 1;
-    if (windowWidth <= 1024) {
-      popupPortfolioSlide.style.cssText=`
-      transform: translateY(0px);
-      transition: 0.3s;
-      `;
-    } else {
-      popupPortfolioSlide.style.cssText=`
-      transform: translateY(-${slideActive * slideHeight}px);
-      transition: 0.3s;
-      `;
-    }
+
+    mobileSlides.forEach(el => {
+      el.style.display = "none";
+    });
+    mobileSlides[slideActive].style.display = "flex";
+
   };
 
   arrowRight.addEventListener('click', () => {
@@ -63,7 +58,6 @@ const inspirationalPortfolioPopup = () => {
       popupPortfolio.style.visibility = 'visible';     
       slideActive = i;
       slideHeight = popupPortfolioSlide.querySelector('img').height;
-      console.dir(slideHeight);
       render();
       textWrapper.querySelector('.slider-counter-content__current').textContent = slideActive + 1;
       textWrapper.style.top = `${slideHeight - 100}px`;
